@@ -1,39 +1,42 @@
-<html>
-    <body>
+<body>
+    <div>
         <div>
-            <div>
-                <img src="unknown_ava.jpg" alt="Your ava" height="100" with="100">
-                <button type="button">Upload</button>
-            </div>
-            <div>
-                <p>Name: <input type="text"/></p>
-                <p>Age: <input type="number" min="0" max="999"/> </p>        
-                <p>Gender:
-                    <label for="male">Male</label> 
-                    <input type="radio" name="gender" id="male"/>
-                    <label for="female"> Female </label>
-                    <input type="radio" name="gender" id="female"/>
-                </p>
-                <p> City:
-                    <select>
-                        <option value="HCM">HCM</option>
-                        <option value="HN">HN</option>
-                        <option value="DN">DN</option>
-                    </select>
-                </p>
-                <p>DoB:
-                    <input type="date" name="DoB"/>
-                </p>
-                <p>Department:
-                    <input type="checkbox" id="student"/>
-                    <label for="student">Student</label>
-                    <input type="checkbox" id="teacher">
-                    <label for="teacher">Teacher</label>
-                </p>
-            </div>
-            <div>
-                <a href="index2.html"> <button type="button"> Submit</button> </a>                
-            </div>
+            <!-- <img src="unknown_ava.jpg" alt="Your ava" height="100" with="100"> -->
+            <!-- <button type="button">Upload</button> -->
+            <form>
+                <input type="file" name="avatar" value="avatar" id="avatar"/>
+                <label for="avatar">Select your avatar to upload</label>
+                <input type="submit" value="Submit">
+            </form>
         </div>
-    </body>
-</html>
+        <div>
+            <p>Name: <input type="text"/></p>
+            <p>Age: <input type="number" min="0" max="999"/> </p>        
+            <p>Gender:
+                <label for="male">Male</label> 
+                <input type="radio" name="gender" id="male"/>
+                <label for="female"> Female </label>
+                <input type="radio" name="gender" id="female"/>
+            </p>
+            <p> City:
+                <select>
+                    <option value="HCM">HCM</option>
+                    <option value="HN">HN</option>
+                    <option value="DN">DN</option>
+                </select>
+            </p>
+            <p>DoB:
+                <input type="date" name="DoB"/>
+            </p>
+            <p>Department:
+                <input type="checkbox" id="student"/>
+                <label for="student">Student</label>
+                <input type="checkbox" id="teacher">
+                <label for="teacher">Teacher</label>
+            </p>
+        </div>
+        <div>
+            <a href="index2.html"> <button type="button"> Submit</button> </a>                
+        </div>
+    </div>
+</body>
